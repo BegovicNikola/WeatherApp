@@ -21,15 +21,15 @@ function loadWeather(){
       // Description of conditions
       document.getElementById("condition").innerHTML = weather.query.results.channel.item.condition.text;
       // Temperature converted from F to C and displayed
-      document.getElementById("tempc").innerHTML = '<i class="fas fa-thermometer-three-quarters"></i> ' + Math.round((Number(weather.query.results.channel.item.condition.temp) - 32) * 5 / 9) + "&#8451;";
+      document.getElementById("tempc").innerHTML = '<i class="fas fa-thermometer-three-quarters"></i> ' + Math.round((Number(weather.query.results.channel.item.condition.temp) - 32) * 5 / 9) + " &#8451;";
       // Temperature in F
-      document.getElementById("tempf").innerHTML = '<i class="fas fa-thermometer-three-quarters"></i> ' + weather.query.results.channel.item.condition.temp + "&#8457;";
+      document.getElementById("tempf").innerHTML = '<i class="fas fa-thermometer-three-quarters"></i> ' + weather.query.results.channel.item.condition.temp + " &#8457;";
       // Wind speed from mph to mps
-      document.getElementById("wind").innerHTML = '<i class="fas fa-location-arrow"></i> ' + Math.round(Number(weather.query.results.channel.wind.speed)*0.44704) + "m/s";
+      document.getElementById("wind").innerHTML = '<i class="fas fa-location-arrow"></i> ' + Math.round(Number(weather.query.results.channel.wind.speed)*0.44704) + " m/s";
       // Atmospheric pressure in mBar
-      document.getElementById("press").innerHTML = '<i class="fas fa-cloud-download-alt"></i> ' + Math.round(Number(weather.query.results.channel.atmosphere.pressure)) + "mb";
+      document.getElementById("press").innerHTML = '<i class="fas fa-cloud-download-alt"></i> ' + weather.query.results.channel.atmosphere.pressure + " mb";
       // Humidity in percent
-      document.getElementById("humid").innerHTML = '<i class="fas fa-tint"></i> ' + weather.query.results.channel.atmosphere.humidity + "&percnt;";
+      document.getElementById("humid").innerHTML = '<i class="fas fa-tint"></i> ' + weather.query.results.channel.atmosphere.humidity + " &percnt;";
       /* ADD ALL THE MISSING CONDITIONS IN RELATED CASES */
       if(condition == 0 || condition == 1 || condition == 2 /*HURRICANES*/){
         document.getElementById('image').innerHTML = '<img src="img/cloudy.png"/>';
