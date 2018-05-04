@@ -5,35 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>WeatherApp</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
   <div id="container">
     <input id="enter" type="text" placeholder="City"/>
     <h1 id="city">
-      <!-- Inserts city and region -->
+      <!-- Inserts city and region -->Great weather today!
     </h1>
     <h2 id="country">
-      <!-- Inserts country -->
+      <!-- Inserts country -->Agree?
     </h2>
     <div id="image">
-      <!-- Inserts image of conditions -->
+      <!-- Inserts image of conditions --><img src="img/cloudy.png" />
     </div>
     <h2 id="condition">
-      <!-- Inserts condition -->
+      <!-- Inserts condition -->Current weather conditions
     </h2>
     <div id="feel">
-      <h3 id="temp">
-        <!-- Inserts temperature (change from F to C) -->
+      <h3 id="tempc" class="feeld">
+        <!-- Inserts temperature (change from F to C) --><i class="fas fa-thermometer-three-quarters"></i> &#8451;
       </h3>
-      <h3 id="wind">
-        <!-- Inserts wind speed (change from MPH to M/S) -->
+      <h3 id="humid" class="feeld">
+        <!-- Inserts humidity --><i class="fas fa-tint"></i> &percnt;
       </h3>
-      <h3 id="humid">
-        <!-- Inserts humidity -->
+      <h3 id="press" class="feeld">
+        <!-- Inserts pressure --><i class="fas fa-cloud-download-alt"></i> mb
       </h3>
-      <h3 id="press">
-        <!-- Inserts pressure -->
+      <h3 id="wind" class="feeld">
+        <!-- Inserts wind speed (change from MPH to M/S) --><i class="fas fa-location-arrow"></i> m/s
+      </h3>
+      <h3 id="tempf" class="feeld">
+        <!-- Inserts temperature in F --><i class="fas fa-thermometer-three-quarters"></i> &#8457;
       </h3>
     </div>
   </div>
