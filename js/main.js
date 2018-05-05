@@ -32,19 +32,19 @@ function loadWeather(){
       document.getElementById("humid").innerHTML = '<i class="fas fa-tint"></i> ' + weather.query.results.channel.atmosphere.humidity + " &percnt;";
       /* ADD ALL THE MISSING CONDITIONS IN RELATED CASES */
       if(condition == 0 || condition == 1 || condition == 2 /*HURRICANES*/){
-        document.getElementById('image').innerHTML = '<img src="img/cloudy.png"/>';
+        document.getElementById('image').innerHTML = '<img src="img/1.png"/>';
       }else if(condition == 3 || condition == 4 || condition == 37 ||condition == 38 || condition == 39 || condition == 45 || condition == 47 /*THUNDERSTORMS*/){
-        document.getElementById("image").innerHTML = '<img src="img/cloud.png"/>';
+        document.getElementById("image").innerHTML = '<img src="img/6.png"/>';
       }else if(condition == 8 || condition == 9 || condition == 10 || condition == 11 || condition == 12 || condition == 40 /*RAIN*/){
-        document.getElementById("image").innerHTML = '<img src="img/cloud.png"/>';
+        document.getElementById("image").innerHTML = '<img src="img/5.png"/>';
       }else if(condition == 5 || condition == 6 || condition == 7 || condition == 13 || condition == 14 || condition == 15 || condition == 16 || condition == 18 || condition == 41 || condition == 43 || condition == 46 /*SNOW*/){
-        document.getElementById("image").innerHTML = '<img src="img/cloud.png"/>';
+        document.getElementById("image").innerHTML = '<img src="img/9.png"/>';
       }else if(condition == 26 || condition == 27 || condition == 28 || condition == 29 || condition == 30 /*CLOUDY*/){
-        document.getElementById("image").innerHTML = '<img src="img/cloud.png"/>';
+        document.getElementById("image").innerHTML = '<img src="img/3.png"/>';
       }else if(condition == 32 || condition == 33 || condition == 34 || condition == 36 /*SUNNY*/){
-        document.getElementById("image").innerHTML = '<img src="img/cloud.png"/>';
+        document.getElementById("image").innerHTML = '<img src="img/2.png"/>';
       }else/*NOT AVAILABLE*/{
-        document.getElementById("image").innerHTML = "Not available";
+        document.getElementById("image").innerHTML = '<img src="img/1.png"/>';
       }
       /*PROVERAVATI DOBA DANA i bojiti pozadinu i slike u crno ili plavo*/
     }else{
