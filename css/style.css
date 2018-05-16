@@ -41,6 +41,7 @@ body {
   outline: none;
   font-weight: bold;
   transition: 0.8s;
+  text-align: center;
 }
 
 #enter:hover {
@@ -64,6 +65,7 @@ body {
 #city {
   margin-top: 18px;
   font-size: 24px;
+  text-align: center;
 }
 
 #country {
